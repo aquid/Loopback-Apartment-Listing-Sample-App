@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "../node_modules/loopback-component-passport/lib/models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongoDb"
+  },
+  "AccessToken": {
+    "dataSource": "mongoDb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongoDb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongoDb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongoDb",
+    "public": false
+  },
+  "Listings": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "Image": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "Bookings": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "MyUsers": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "ApplicationCredential": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "UserCredential": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "UserIdentity": {
+    "dataSource": "mongoDb",
+    "public": true
+  }
+}

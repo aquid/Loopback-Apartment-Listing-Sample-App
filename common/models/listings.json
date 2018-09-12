@@ -1,0 +1,47 @@
+{
+  "name": "Listings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "full-address": {
+      "type": "number",
+      "required": true
+    },
+    "rent": {
+      "type": "number",
+      "required": true
+    },
+    "available-from": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "images": {
+      "type": "hasMany",
+      "model": "Image",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
