@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp" : true
+  },
   "properties": {
     "name": {
       "type": "string",
@@ -15,7 +18,7 @@
       "required": true
     },
     "full-address": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "rent": {
@@ -29,6 +32,15 @@
     "description": {
       "type": "string",
       "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
