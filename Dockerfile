@@ -11,6 +11,6 @@ RUN npm install
 # Bundle app source
 COPY . /app/listing-app
 
-EXPOSE 3000
+#EXPOSE 3000
 
 CMD [ "node", "." ]
